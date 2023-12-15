@@ -3,7 +3,7 @@
 
 ## Introduction
 
-For this project, I constructed a small honeynet in Azure and collected log data from several sources into a Log Analytics workspace. This workspace is subsequently utilized by Microsoft Sentinel to generate attack maps, activate alerts, and generate incidents. I conducted security metric assessments in an unsecure environment for a duration of 24 hours. Subsequently, I implemented security measures to strengthen the environment and conducted another 24-hour assessment of the metrics. The findings of these assessments are presented below. The metrics we will display are:
+For this project, I constructed a small honeynet in Azure and collected log data from several sources into a Log Analytics workspace. This workspace is subsequently utilized by Microsoft Sentinel to generate attack maps, activate alerts, and generate incidents. I conducted security metric assessments in an unsecured environment for a duration of 24 hours. Subsequently, I implemented security measures to strengthen the environment and conducted another 24-hour assessment of the metrics. The findings of these assessments are presented below. The metrics we will display are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -33,9 +33,10 @@ To collect the "AFTER" metrics, Network Security Groups were strengthened by imp
 
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](INSERTPICTURE)<br>
-![Linux Syslog Auth Failures](INSERTPICTURE)<br>
-![Windows RDP/SMB Auth Failures](INSERTPICTURE)<br>
+![Screenshot 2023-11-28 100847](https://github.com/thekerbonaut/Building-a-Honeynet-and-SOC-in-Azure/assets/3719723/3e09ae1c-4cf9-4875-b617-55544cbb657b)<br>
+![Screenshot 2023-11-28 100957](https://github.com/thekerbonaut/Building-a-Honeynet-and-SOC-in-Azure/assets/3719723/e3df02e5-d03f-408c-bd5a-d21c2e85d8a9)<br>
+![Screenshot 2023-11-28 101208](https://github.com/thekerbonaut/Building-a-Honeynet-and-SOC-in-Azure/assets/3719723/4d1d6471-a6e5-431f-b674-b61a7ac94895)<br>
+![Screenshot 2023-11-28 101339](https://github.com/thekerbonaut/Building-a-Honeynet-and-SOC-in-Azure/assets/3719723/c5e4a6f7-5d03-46a7-a306-59667c86dba0)<br>
 
 ## Metrics Before Hardening / Security Controls
 
